@@ -1,0 +1,439 @@
+Portfolio Website
+
+HTML Coding
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script async src="./code.js"></script>
+</head>
+<body>
+    <header>    
+        <h1>Portfolio</h1>
+        <ul>
+            <li> <a href="#homepage">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#myservices">Services</a></li>
+            <li> <a href="#contactme">Contact</a></li>
+        </ul>
+    </header>
+    <!--Page One HTML-->
+    <section id="homepage" class="One">
+        <div class="left">
+            <p>Front-end Developer</p>
+            <p>Hi,i'm <span>Samba Siva Kasineni</span> <br>From Bengaluru</p>
+        </div>
+        <div class="right">
+            <img src="./images/Tirumala.jpg" alt="">
+        </div>
+    </section>
+    <!--Page Two HTML-->
+    <section id="about" class="Two">
+        <div class="left">
+            <img src="./images/My_pic.jpg" alt="">
+        </div>
+        <div class="right">
+            <h2>About Me</h2>
+            <p>As a passionate front-end developer, I bring creativity and technical expertise to deliver visually stunning and highly functional user interfaces. With a solid foundation in HTML, CSS, and JavaScript.</p>
+            <div class="content">
+                <ul>
+                    <h2>Education</h2>
+                    <span><li>Degree - B.Sc Computer's</li></span>
+                    <li>yogi vemana unniversity</li> 
+                    <li>2023</li>
+                    <span><li>12th Class</li></span>
+                    <li>SGVS Jr College</li>
+                    <li>2018</li>
+                    <span><li>10th Class</li></span>
+                    <li>ZPHS High School</li>
+                    <li>2016</li>
+                </ul>
+                <ul>
+                    <h2>Skills</h2>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
+                    <li>React JS</li>
+                </ul>
+                </div>
+        </div>     
+    </section>
+    <!--Page Three HTML-->
+    <section id="myservices" class="three">
+        <h1>My Services</h1>
+        <div class="container">
+            <div class="box1">
+                <img src="./images/code.png" alt="">
+                <h2>Web Design</h2>
+                <p>Web design is the process of creating visually appealing and functional websites, blending elements like layout, typography, color schemes, and graphics to enhance user experience. It emphasizes responsiveness to ensure compatibility across devices and accessibility for all users, including those with disabilities. Utilizing tools such as HTML, CSS, JavaScript, and design software like Adobe XD and Figma, web designers craft sites that are both aesthetically pleasing and highly functional, meeting user and client needs effectively.</p>
+                <span>Learn More</span>
+            </div>
+            <div class="box1">
+                <img src="./images/coding.png" alt="">
+                <h2>UI/UX Design</h2>
+                <p>UI/UX design focuses on crafting user interfaces (UI) and user experiences (UX) that are intuitive, efficient, and enjoyable. UI design involves the visual aspects, such as layout, color schemes, and typography, ensuring an appealing interface. UX design centers on the overall user journey, emphasizing usability, accessibility, and interaction. By employing tools like Sketch, Figma, and Adobe XD, and techniques like wireframing and prototyping, designers create cohesive, user-centered designs that enhance satisfaction and engagement.</p>
+                <span>Learn More</span>
+            </div>
+            <div class="box1">
+                <img src="./images/app-development.png" alt="">
+                <h2>App-development</h2>
+                <p>App development involves creating software applications for mobile devices or desktops, combining design, coding, testing, and deployment. It encompasses choosing the right programming languages (like Swift, Kotlin, or Java), frameworks, and tools (such as Xcode and Android Studio) to build efficient, user-friendly apps. Developers focus on functionality, performance, and user experience, ensuring apps meet user needs and work seamlessly across different devices and operating systems, from initial concept to final release.</p>
+                <span>Learn More</span>
+            </div>
+        </div>
+    </section>
+    <!--Page Four HTML-->
+    <section id="contactme" class="four">
+        <div class="left">
+            <h1>Contact Me</h1>
+            <div class="info">
+                <img src="./images/gmail(1).png" alt="">
+                <p>Sambasiva9856@gmail.com</p>
+            </div>
+            <div class="info">
+                <img src="./images/telephone.png" alt="">
+                <p>910071377</p>
+            </div>
+            <div class="logo">
+                <a href="http://facebook.com"><img src="/images/facebook(1).png" alt=""></a>
+                <a href="http://instagram.com"><img src="/images/instagram(1).png" alt=""></a>
+                <a href="http://linkedin.com"><img src="/images/linkedin.png" alt=""></a>
+                <a href="http://twitter.com"><img src="/images/twitter (2).png" alt=""></a>
+            </div>
+            <a href="./images/Shiva_Resume.pdf" download="" class="downloded">Download CV</a>
+        </div>
+        <div class="right">
+            <form action="" name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="your Name" required>
+                <input type="number" name="Number" id="" placeholder="number" required>
+                <input type="email" name="Email" id="" placeholder="your Email" required>
+                <textarea name="Message" id="" rows="4" placeholder="your Message"></textarea>
+                <button type="submit" class="downloded">Submit</button>
+            </form>
+            <span id="message"></span>
+        </div>
+    </section>    
+</body>
+</html>
+  
+  CSS Style Sheet
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@100;400;500&family=Open+Sans:wght@400;600&family=Ubuntu&family=Unbounded:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    color: white;
+    background-color: cadetblue;
+    width: 100%;
+}
+/* all H1 Tag CSS */
+h1{
+    color: deeppink;
+    font-size: 2rem;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+    font-size: 1.5rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 20vh;
+}
+/* Section One CSS */
+.One{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:1rem ;
+    padding: 3rem;
+    font-size: 1.4rem;
+    height: 100vh;
+}
+.One .left span{
+    color: red;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    margin-right: 18rem;
+}
+.One .right img{
+    height: 23rem;
+    border-radius: 3.5rem;
+    margin-top: -90px;
+}
+/* Section Two CSS */
+.Two{
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    gap: 10rem;
+    margin: 2rem;
+    height: 100vh;
+}
+.Two .left img{
+    height: 38rem;
+    border-radius: 3rem;
+}
+.Two .right .content{
+    display: flex;
+    justify-content: flex-start;
+    gap: 4rem;
+    margin: 2rem;
+}
+.Two .right{
+    margin-top: 30px;
+    line-height: 2rem;
+    font-size: 18px;
+}
+.Two .right h2{
+    color: red;
+    font-size: 26px;
+}
+.Two .right .content span{
+    color: chartreuse;
+}
+.Two .right ul{
+    list-style: none;
+}
+/* Section Three CSS */
+.three{
+    height: 100vh;
+}
+.three h1{
+    margin-left: 8%;
+    font-size: 2.4rem;
+}
+.three .container{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    margin-top: 2%;
+}
+.three .container .box1{
+    height: 450px;
+    width: 370px;
+    border: solid 2px red;
+    border-radius: 20px;
+    line-height: 1.4rem;
+    padding: 0.3rem;
+    margin: 1.2rem;
+    background-color: aliceblue;
+    display: inline-block;
+    transition: transform 0.5sec, background 0.5sec;
+}
+.three .container .box1:hover{
+    transform: translateY(-10px);
+    background: lavender;
+}
+.three .container .box1 h2{
+    line-height: 2rem;
+    color: red;
+    font-size: large;
+}
+.three .container .box1 span{
+    line-height: 3rem;
+    font-weight: 500;
+    color: blue;
+}
+.three .container .box1 img{
+    height: 3rem;
+}
+/* Section Four CSS */
+.four{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.four .left .info img{
+    height: 1.2rem;
+}
+.four .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center ;
+    gap: 2.5rem;
+}
+.four .left .info{
+    display: flex;
+    gap: 0.8rem;
+}
+.four .left .logo img{
+    height: 1.6rem;
+}
+.four .right form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.four .left .logo{
+    display: flex;
+    gap: 0.8rem;
+}
+.four .info p{
+    font-size: larger;
+}
+.four .downloded{
+    height: 40px;
+    width: 150px;
+    display: inline-block;
+    background: lightgreen;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.four .right button{
+    margin-left: 30%;
+    cursor: pointer;
+}
+.four .right form input{
+    width: 25rem;
+    height: 2.6rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    background: lavenderblush;
+}
+.four .right textarea{
+    outline: none;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: lavenderblush;
+}
+#message{
+    color: aqua;
+    margin-top: 20px;
+    display: block;
+}
+ /*media Queries screen*/
+ @media all and (max-width:600px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header{
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    header ul{
+        font-size: 1rem;
+        gap: 1.2rem;
+    }
+    .One{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 80vh;
+        width: 100%;
+    }
+    .One .left{
+        margin-left: 5rem;
+    }
+    .One .right img{
+        height: 21rem;
+        margin-top: 5rem;
+    }
+    .Two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .Two .right p{
+        margin-left: 2rem;
+        font-size: 1rem;
+    }
+    .Two .left img{
+        height: 25rem;
+        margin-top: 40rem;
+    }
+    .three{
+        height: 180vh;
+        margin-top: 45rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .three .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .three .container .box1{
+        height: 500px;
+        width: 320px;
+    }
+    .four{
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .four .left{
+        margin-top: -2rem;
+    }
+    .four .right{
+        margin-top: 5rem;
+    }
+    .four .right form input{
+        width: 20rem;
+    }
+    
+ }
+
+
+JavaScript Coding
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzBqsYSR-ZaYImkhzPbRruZJW1PaTtrl05Oz1aBP03iTxUCDGRypj39YhQTep5HXnFb/exec'
+const form = document.forms['submit-to-google-sheet']
+const message = document.getElementById('message')
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        message.innerHTML = 'Message was sent successfully'
+        setTimeout(function(){
+            message.innerHTML = ''
+        },3000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+    
